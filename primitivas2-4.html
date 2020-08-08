@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Scene -  A-Frame</title>
+        <meta name="description" content="Basic Scene - A-Frame" />
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-cone position="2 1 -6" color="green" rotation="-90 25 0" radius-bottom="0" radius-top="0.5" ></a-cone>
+            <a-octahedron position="-2 1 -6" color="lightblue" rotation="0 45 0"></a-octahedron>
+            <a-torus-knot position="0 2 -8" arc="180" p="2" q="7" radius="1" radius-tubular="0.1" color="#B84739"></a-torus-knot>
+            <a-torus color="#213041" arc="360" position="0 0 -8" radius="4.5" radius-tubular="0.1"></a-torus>
+            <a-plane position="0 0 -8" width="8" height="4" color="peru" rotation="-90 0 0"></a-plane>
+            <a-sky color="skyblue"></a-sky>
+            <a-entity position="0 1.6 0" id="rig"> 
+                <a-entity  camera="near: 0.005; far: 10000; fov: 80" wasd-controls look-controls></a-entity>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>
